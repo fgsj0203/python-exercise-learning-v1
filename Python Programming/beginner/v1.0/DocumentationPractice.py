@@ -42,12 +42,15 @@ print("The two numbers floating is: %f %f" % (number_floating, number_two_floati
 
 """
 Exercises practice level of beginner
-Source: PYnative - https://pynative.com/python-basic-exercise-for-beginners/
+Source: Programiz - https://www.programiz.com/python-programming/examples
 Date: 04/07/2025 - in format Brazil
 """
 print("Exercise 01")
+print("\nHello World")
+
+print("\nExercise 02")
 number_one = int(input("number one: "))
 number_two = int(input("number two: "))
-product_number = number_one * number_two
+product_number = number_one + number_two
 
 # -------------------------------------------------------------------

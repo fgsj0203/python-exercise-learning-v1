@@ -17,6 +17,10 @@ O repositório contem exercícios de estruturas sequenciais, condicionais, estru
 - PyNative = https://pynative.com/
 - Beecrowd = https://judge.beecrowd.com/pt/login (necessário fazer cadastro porém é muito mais completo que o PyNative)
 
+### Stack utilizada
+- IDE/Editor de código = ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+- Linguagem = ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+- Versionamento = ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
 
 

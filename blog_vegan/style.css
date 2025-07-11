@@ -1,0 +1,328 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --verde-suave: #4CAF50;
+  --fundo-claro: #fffaf0;
+  --cinza-leve: #f5f5f5;
+  --marrom-suave: #5e4b3c;
+  --texto-escuro: #333;
+  --borda-leve: #e0e0e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--fundo-claro);
+  color: var(--texto-escuro);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--cinza-leve);
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid var(--borda-leve);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--verde-suave);
+}
+
+nav {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+nav button {
+  background: transparent;
+  border: 1px solid var(--verde-suave);
+  color: var(--verde-suave);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav button:hover {
+  background: var(--verde-suave);
+  color: white;
+}
+
+.post-grid {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.post-card {
+  background: white;
+  border: 1px solid var(--borda-leve);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.post-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.post-content {
+  padding: 1rem;
+}
+
+.post-content h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--marrom-suave);
+}
+
+.post-content h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-content h2 a:hover {
+  text-decoration: underline;
+}
+
+.post-content p {
+  color: #555;
+  font-size: 1rem;
+}
+  
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: var(--cinza-leve);
+  border-top: 1px solid var(--borda-leve);
+  color: var(--marrom-suave);
+  font-size: 0.9rem;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --azul-petroleo: #2C2C2C;
+  --azul-piscina: #3c91e6;
+  --verde-agua: #38b000;
+  --cinza-claro: #d9f0ff;
+  --branco-gelo: #f7f9fc;
+  --cinza-escuro: #22333b;
+  --sombra-card: rgba(56, 176, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--branco-gelo);
+  color: var(--cinza-escuro);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--azul-petroleo);
+  color: var(--branco-gelo);
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+  border-bottom: 3px solid var(--verde-agua);
+}
+
+header h1 {
+  font-weight: 600;
+  font-size: 2.8rem;
+  letter-spacing: 0.05rem;
+}
+
+nav {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav button {
+  background: transparent;
+  border: 2px solid var(--azul-piscina);
+  color: var(--azul-piscina);
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px transparent;
+}
+
+nav button:hover,
+nav button:focus {
+  background: var(--azul-piscina);
+  color: var(--branco-gelo);
+  box-shadow: 0 0 10px var(--azul-piscina);
+  outline: none;
+}
+
+.post-grid {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.post-card {
+  background: var(--cinza-claro);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 15px var(--sombra-card);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px var(--verde-agua);
+}
+
+.post-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  border-bottom: 1px solid var(--verde-agua);
+}
+
+.post-card:hover .post-image {
+  transform: scale(1.05);
+}
+
+.post-content {
+  padding: 1.2rem 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post-content h2 {
+  font-size: 1.3rem;
+  color: var(--azul-petroleo);
+  margin-bottom: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.post-content h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-content h2 a:hover {
+  color: var(--verde-agua);
+}
+
+.post-content p {
+  color: var(--azul-petroleo);
+  font-size: 1rem;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.post-button {
+  align-self: flex-start;
+  background: var(--verde-agua);
+  color: var(--branco-gelo);
+  border: none;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--verde-agua);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.post-button:hover,
+.post-button:focus {
+  background: var(--azul-piscina);
+  color: var(--branco-gelo);
+  box-shadow: 0 0 15px var(--azul-piscina);
+  outline: none;
+}
+
+footer {
+  background-color: var(--azul-petroleo);
+  color: var(--branco-gelo);
+  text-align: center;
+  padding: 2rem 1rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+}
+
+nav .donate-button {
+  background-color: #38b000;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 0 10px #38b000;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav .donate-button:hover,
+nav .donate-button:focus {
+  background-color: #2C2C2C;
+  color: #38b000;
+  box-shadow: 0 0 12px #38b000;
+  outline: none;
+}
